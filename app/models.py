@@ -42,6 +42,7 @@ class Message(models.Model):
 	body = models.CharField(max_length=100)
 	message_id = models.CharField(max_length=100)
 	created = models.CharField(max_length=100)
+
 class Copy(models.Model):
 	name = models.CharField(max_length=100)
 	lat = models.CharField(max_length=100)
@@ -53,6 +54,7 @@ class Copy(models.Model):
 	did = models.CharField(max_length=10)
 	def __str__(self):
 		return self.name
+
 class Hospital(models.Model):
 	cid = models.CharField(max_length=100)
 	current_status = models.CharField(max_length=100)
@@ -82,6 +84,5 @@ class Attacker(models.Model):
 
 	def __str__(self):
 		return self.ip
-
 
 
